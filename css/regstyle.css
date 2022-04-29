@@ -1,0 +1,129 @@
+:root{
+    --main-color: #866e99;
+    --secondary-color:#cfd4c7f4;
+    --third-color:#fbfff5;
+    --submit-color:#c8e367 ;
+    --font-color :#000000;
+    --secondary-font-color:#ffffff;
+    --highlight-font-color:#ead8ea;
+    --section-padding:60px;
+    --section-background:#def84c;
+}
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 62%;
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+}
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-font-color);
+    text-align: right;
+}
+.header{
+    height: 100vh;
+    position: relative;
+    background-image: url(../images/bc.jpg);
+    margin: 1%;
+    border-radius: 2%;
+    margin-top: 0.5px;
+    background-size: cover;
+    background-position-y: top;
+    background-repeat: round;
+}
+.logo{
+    width: 100px;
+    margin-top: 0%;
+    margin-right: 90%;
+}
+.logo:hover{
+    color: var(--secondary-font-color);
+}
+.register{
+    margin-right: 5%;
+    margin-left: 43%;
+    background: var(--main-color);
+    border: 5px sloid var(--main-color);
+    width: 600px;
+
+}
+.register form{
+    border: 3px sloid var(--main-color);
+    margin-top: -8%;
+    margin-right: 12px;
+}
+h1{
+    text-align: left;
+    font-size: 15px;
+}
+p{
+    text-align: left;
+    font-size: 13px;
+}
+input[type=text],
+    input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+    }
+
+    input[type=text]:focus,
+    input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+    }
+
+    hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+    }
+.register button {
+        background-color: #04aa6d85;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        opacity: 0.9;
+        width: 100%;
+    }
+.register button:hover {
+        opacity: 1;
+    }
+.register .cancelbtn {
+        padding: 14px 20px;
+        background-color: #f443364a;
+    }
+.register .cancelbtn,
+    .signupbtn {
+        float: left;
+        width: 50%;
+    }
+    .container {
+        padding: 16px;
+    }
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+label b {
+    text-align: left;
+    margin-right: 96%;
+}
+label .repeat {
+    text-align: left;
+    margin-right: 85%;
+}

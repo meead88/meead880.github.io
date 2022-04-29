@@ -1,0 +1,316 @@
+:root{
+    --main-color: #866e99;
+    --secondary-color:#cfd4c7f4;
+    --third-color:#fbfff5;
+    --submit-color:#c8e367 ;
+    --font-color :#000000;
+    --secondary-font-color:#ffffff;
+    --highlight-font-color:#ead8ea;
+    --section-padding:60px;
+    --section-background:#def84c;
+}
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 62%;
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+}
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-font-color);
+    text-align: right;
+}
+.header{
+    height: 100vh;
+    position: relative;
+    background-image: url(../images/bc.jpg);
+    margin: 1%;
+    border-radius: 2%;
+    margin-top: 0.5px;
+    background-size: cover;
+    background-position-y: top;
+    background-repeat: round;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.9rem 0.3rem;
+    border-radius: 0.9rem;
+    color: var(--main-color);
+    background-color: var(--secondary-font-color);
+    font-size: 1.7rem;
+    cursor:pointer;
+    margin-right: 50%;
+    font-weight: 500;
+    width: 100%;
+    height: 100%;
+}
+.btn:hover{
+    background-color: var(--highlight-font-color);
+}
+.header .header1{
+    background-color: var(--main-color);
+    padding: 1.5rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .header1 .search-form{
+    width: 50rem;
+    height: 5rem;
+    border: var(--secondary-font-color);
+    background: var(--secondary-font-color);
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+.header .header1 .search-form input{
+    font-size: 1.6rem;
+    padding: 0 1.2rem;
+    height: 100%;
+    width: 100%;
+    text-transform: none;
+    color: var(--font-color);
+}
+#search-box{border: var(--secondary-font-color);}
+.header .header1 .search-form label{
+    font-size: 2.5rem;
+    padding-right: 1.5rem;
+    color: var(--font-color);
+    cursor: pointer;
+}
+.header .header1 .search-form label:hover{
+    color: var(--main-color);
+}
+.header .header1 .icons div ,.header .header1 .icons a{
+    font-size: 2.5rem;
+    margin-left: 1.5rem;
+    color: var(--font-color);
+    cursor: pointer;
+}
+.header .header1 .icons div:hover ,.header .header1 .icons a:hover{
+    color: var(--secondary-font-color);
+}
+.header .header2 .navbar{
+    text-align: center;
+}
+.header .header2 .navbar a{
+    color: var(--font-color);
+    display: inline;
+    padding: 1.2rem;
+    font-size: 1.7rem;
+}
+.header .header2 .navbar a:hover{
+    background: #5c1268;
+}
+.header .header2.active{
+    position: fixed;
+    top:0 ; left:0 ; right: 0;
+    z-index: 1000;
+
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 19%;
+    padding-right: 6%;
+    margin-top: -1%;
+}
+.logo{
+    width: 100px;
+    margin-top: 0%;
+}
+.logo:hover{
+    color: var(--secondary-font-color);
+}
+nav{
+    padding: 30px 0;
+    display: inline-block;
+    word-spacing: 30px;
+    font-size: 23px;
+    margin-top: 15px;
+    margin-right: 5%;
+}
+.nav a{
+    text-decoration: none;
+    color: var(--font-color);
+    padding: 5px 0;
+    position: relative;
+}
+.nav a:hover{
+    padding-left: 25px;
+    text-decoration: underline;
+    color: var(--secondary-font-color);
+    background: var(--main-color);
+}
+
+
+
+
+
+
+
+
+/* start footer */
+
+footer{
+    background-color: var(--secondary-font-color);
+    padding: 70px 0;
+}
+footer ul{
+    list-style: none;
+    margin-right: 100%;
+    margin-left: -10%;
+}
+footer ul li:not(:last-child){
+    margin-bottom: 10px;
+
+}
+footer ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color:var(--font-color);
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s;
+}
+footer ul li a:hover{
+    color: #f0f0f06a;
+    padding-left: 8px;
+}
+.row{
+    margin-left: 15%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.column{
+    width: 25%;
+    padding: 0 15px;
+    padding-left: 50px;
+
+}
+.column h4{
+    font-size: 18px;
+    color: var(--font-color);
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 450;
+    position: relative;
+    margin-right: 70%;
+}
+
+.column h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color:var(--main-color);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+footer .column .social a{
+    background-color:var(--main-color);
+    display: block;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: var(--font-color);
+    transition: all 0.5 ease;
+}
+
+footer .social a:hover{
+    color:#343631;
+    background-color: #ccc4cc;
+    padding-left: -2px;
+}
+footer p{
+    color: var(--font-color);
+    text-align: center;
+    size: 20px;
+    margin-top: 5%;
+}
+.books{
+    background-color: var(--main-color)
+}
+
+
+h2 {
+    text-align: center;
+    padding-top: 2%;
+    color: white;
+    margin-left: 5%;
+    font-size: 50px;
+    opacity: 30%;
+}
+.box{
+    border: 1px solid;
+    width: 450px;
+    border: 1px solid var(--font-color);
+    margin: 20px;
+    padding: 1%;
+    display: inline-block;
+
+}
+.header2 p{
+    text-align: left;
+}
+.box img{
+    display: block;
+    width: 95%;
+    height: 99%;
+    margin: 3%;
+    margin-bottom: 9%;
+    border: 3px solid grey;
+}
+.box span
+{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    color: var(--secondary-font-color);
+    margin-bottom: 3%;
+}
+.box p{
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    color: var(--secondary-font-color);
+    margin-bottom: 9%;
+    margin-top: -1%;
+}
+.box button{
+    text-align: center;
+    background: green;
+    align-items: self-end;
+    font-size: 15px;
+    color: #fbfff5;
+    margin-left: 10%;
+    margin-bottom: -6%;
+    width: 50%;
+    display: grid;
+    border: 6px solid green;
+}
+.box div{
+    color: white;
+    margin-right: 8%;
+    display: inline-grid;
+    margin-bottom: 11%;
+    font-size: 2.5rem;
+}
+.box div:hover{
+    color:red;
+}

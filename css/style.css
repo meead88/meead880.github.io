@@ -1,0 +1,535 @@
+:root{
+    --main-color: #866e99;
+    --secondary-color:#cfd4c7f4;
+    --third-color:#fbfff5;
+    --submit-color:#c8e367 ;
+    --font-color :#000000;
+    --secondary-font-color:#ffffff;
+    --highlight-font-color:#ead8ea;
+    --section-padding:60px;
+    --section-background:#def84c;
+}
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 62%;
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+}
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-font-color);
+    text-align: right;
+}
+.header{
+    height: 100vh;
+    position: relative;
+    background-image: url(../images/bc.jpg);
+    margin: 1%;
+    border-radius: 2%;
+    margin-top: 0.5px;
+    background-size: cover;
+    background-position-y: top;
+    background-repeat: round;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.9rem 0.3rem;
+    border-radius: 0.9rem;
+    color: var(--main-color);
+    background-color: var(--secondary-font-color);
+    font-size: 1.7rem;
+    cursor:pointer;
+    margin-right: 50%;
+    font-weight: 500;
+    width: 100%;
+    height: 100%;
+}
+.btn:hover{
+    background-color: var(--highlight-font-color);
+}
+.header .header1{
+    background-color: var(--main-color);
+    padding: 1.5rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .header1 .search-form{
+    width: 50rem;
+    height: 5rem;
+    border: var(--secondary-font-color);
+    background: var(--secondary-font-color);
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+.header .header1 .search-form input{
+    font-size: 1.6rem;
+    padding: 0 1.2rem;
+    height: 100%;
+    width: 100%;
+    text-transform: none;
+    color: var(--font-color);
+}
+#search-box{border: var(--secondary-font-color);}
+.header .header1 .search-form label{
+    font-size: 2.5rem;
+    padding-right: 1.5rem;
+    color: var(--font-color);
+    cursor: pointer;
+}
+.header .header1 .search-form label:hover{
+    color: var(--main-color);
+}
+.header .header1 .icons div ,.header .header1 .icons a{
+    font-size: 2.5rem;
+    margin-left: 1.5rem;
+    color: var(--font-color);
+    cursor: pointer;
+}
+.header .header1 .icons div:hover ,.header .header1 .icons a:hover{
+    color: var(--secondary-font-color);
+}
+.header .header2 .navbar{
+    text-align: center;
+}
+.header .header2 .navbar a{
+    color: var(--font-color);
+    display: inline;
+    padding: 1.2rem;
+    font-size: 1.7rem;
+}
+.header .header2 .navbar a:hover{
+    background: #5c1268;
+}
+.header .header2.active{
+    position: fixed;
+    top:0 ; left:0 ; right: 0;
+    z-index: 1000;
+
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 19%;
+    padding-right: 6%;
+    margin-top: -1%;
+}
+.logo{
+    width: 100px;
+    margin-top: 0%;
+}
+.logo:hover{
+    color: var(--secondary-font-color);
+}
+nav{
+    padding: 30px 0;
+    display: inline-block;
+    word-spacing: 30px;
+    font-size: 23px;
+    margin-top: 15px;
+    margin-right: 5%;
+}
+.nav a{
+    text-decoration: none;
+    color: var(--font-color);
+    padding: 5px 0;
+    position: relative;
+}
+.nav a:hover{
+    padding-left: 25px;
+    text-decoration: underline;
+    color: var(--secondary-font-color);
+    background: var(--main-color);
+}
+.login{
+    background-color: var(--main-color);
+    border: 10px solid var(--main-color);
+    border-radius: 10%;
+}
+.landing h1{
+    font-size: 30px;
+    padding-right: 50%;
+    padding-top: 3%;
+    letter-spacing: 2px;
+    word-spacing: 15px;
+    display: inline-block;
+    color: var(--font-color);
+    margin-right: -25%;
+}
+.landing h1:hover{
+    text-decoration: underline;
+}
+.landing p{
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: var(--font-color);
+    margin-right: 5%;
+    margin-bottom: 3%;
+}
+.landing p:hover{
+    padding-right: 25px;
+}
+.landing form{
+    margin-top: 3%;
+    display: inline;
+}
+.user{
+    background-color: var(--main-color);
+    color: var(--font-color);
+    border-radius: 0;
+    margin-right: 2%;
+    padding: 15px;
+    border: 5px solid var(--main-color);
+    font-size: 18px;
+}
+.user:hover{
+    padding-left: 25px;
+}
+.admin{
+    border-radius: 0;
+    padding: 15px;
+    color: var(--main-color);
+    border: 5px solid var(--third-color);
+    font-size: 18px;    
+    margin-right: 20%;
+    background-color: var(--third-color);
+}
+.admin:hover{
+    padding-left: 25px;
+}
+/* end header */
+
+/* contact us */
+.question{
+    /* background-image: url(../images/contact-background.jpg); */
+    background-size: cover;
+    background-color: #343631;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 5px;
+    padding: 10%;
+    border-radius: 1%;
+}
+.question h2{
+    text-align: center;
+    color: var(--secondary-font-color);
+}
+.question h2:hover{
+    margin-left: 25px;
+}
+.question p{
+    font-size: 20px; 
+    color: var(--secondary-font-color);
+}
+.question p{
+    margin-left: 25px;
+}
+.question form{
+    margin-left: 10%;
+
+}
+/* review */
+.review{
+    background-color: var(--main-color);
+    padding-bottom: 5%;
+
+}
+.review .heading{
+    word-spacing: 3px;    
+}
+.container{
+    margin-left: 7%;
+    width: 1200px;
+    display: flex ;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-right: -3%;
+    margin-right: 3%;
+}
+.rev{
+    width: 390px;
+    position: relative;
+    background-color: var(--third-color);
+    padding: 100px 40px 60px;
+    box-shadow: 0 15px 45px var(--main-color);
+    padding-right: 2%;
+    margin-bottom: 3%;
+}
+.headings{
+    margin-right: 5%;
+    color: var(--secondary-font-color);
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    text-align: center;
+    padding: 2%;
+    margin-left: 2%;
+    line-height: 2.0;
+    margin-bottom: 4%;
+    margin-top: 5%;
+    font-size: 30px;
+}
+    .headings:hover{
+    padding-left: 3%;
+}
+
+.container .rev h3{
+    color: #121211;
+    position: absolute;
+    left: 40px;
+    top: 50px;
+    font-size: 5em;
+    z-index: 1;
+    font-size: large;
+    opacity: 1;
+    margin-top: -5px;
+    transition: 0.5s;
+}
+.container .rev p{
+    position: relative;
+    font-size: 1.em;
+    z-index: 2;
+    transition: 0.5s;
+    margin-right: 7%;
+    text-align: left;
+}
+.container .rev:hover p , .container .rev:hover h3{
+    color: var(--highlight-font-color);
+    opacity: 1;
+    color: #121211;
+    transform: translateY(-20px);
+}
+.revimg{
+    width: 150px;
+    align-items: center;
+    margin-right: 60%;
+    border-radius: 50%;
+    height: 100px;
+    margin-top: -19%;
+}
+.container span{
+    display: grid;
+    margin-right: 23%;
+    font-size: 20px;
+    grid-template-columns: 1fr;
+    margin-top: -15%;
+    margin-bottom: 15%;
+}
+.icon i{
+    color: orangered;
+    display: table-cell;
+    padding-left: 3%;
+    width: 20px;
+}
+.revimg:hover{
+    padding-left: 3%;
+}
+/* start footer */
+
+footer{
+    background-color: var(--secondary-font-color);
+    padding: 70px 0;
+}
+footer ul{
+    list-style: none;
+    margin-right: 100%;
+    margin-left: -10%;
+}
+footer ul li:not(:last-child){
+    margin-bottom: 10px;
+
+}
+footer ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color:var(--font-color);
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s;
+}
+footer ul li a:hover{
+    color: #f0f0f06a;
+    padding-left: 8px;
+}
+.row{
+    margin-left: 15%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.column{
+    width: 25%;
+    padding: 0 15px;
+    padding-left: 50px;
+
+}
+.column h4{
+    font-size: 18px;
+    color: var(--font-color);
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 450;
+    position: relative;
+    margin-right: 70%;
+}
+
+.column h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color:var(--main-color);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+footer .column .social a{
+    background-color:var(--main-color);
+    display: block;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: var(--font-color);
+    transition: all 0.5 ease;
+}
+
+footer .social a:hover{
+    color:#343631;
+    background-color: #ccc4cc;
+    padding-left: -2px;
+}
+footer p{
+    color: var(--font-color);
+    text-align: center;
+    size: 20px;
+    margin-top: 5%;
+}
+/* user login */
+.loginform{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    position: fixed;
+    margin-left: 55%;
+    margin-top: 0; 
+}
+.loginform form{
+    background: var(--main-color);
+    border: var(--main-color);
+    width: 40rem;
+    padding: 2rem;
+    box-shadow: var(--main-color);
+    border-radius: 0.5rem;
+    margin: 2rem;
+    margin-top: -7%;
+    margin-right: -5%
+}
+.loginform form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--font-color);
+    text-align: center;
+}
+.loginform form h3:hover{
+    padding-left: 25px;
+}
+.loginform form label{
+    display: block;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    text-align: left;
+}
+.loginform form .box{
+    margin: 0.7rem 0;
+    width: 100%;
+    font-size: 1.6rem;
+    border: var(--main-color);
+    border-radius: 0.5rem;
+    padding: 1rem 1.2rem ;
+    color: var(--font-color);
+    text-transform: none;
+    background-color: var(--secondary-font-color);
+}
+.loginform form .checkbox{
+    display: flex;
+    align-items: center;
+    gap:5rem;
+    padding: 1rem 0;
+}
+.loginform form .checkbox .remember-me{
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: -10%;
+}
+.loginform form .checkbox .btn{
+    text-align: center;
+    width: 100%;
+    margin: 1.5rem 0;
+
+}
+.loginform form p{
+    padding-top: 0.8rem;
+    color: var(--font-color);
+    font-size: 1.5rem;
+    text-align: left;
+}
+.loginform form p a{
+    color: var(--secondary-font-color);
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+/* media */
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+}
+    .header .header1{
+         padding: 2rem;
+}
+}
+@media(max-width:768px){
+    .header .header2{
+        display: none;
+}
+    .header .header1{
+        box-shadow:var(--highlight-font-color);
+        position: relative;
+}
+    .header .header1 .search-form{
+        position: absolute;
+        top:115%; 
+    }
+}
+@media(max-width:450px){
+html{
+    font-size: 50%;
+
+}
+}
+
+
+
+
+
+
+
